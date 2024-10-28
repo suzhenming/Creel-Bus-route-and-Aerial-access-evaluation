@@ -193,13 +193,6 @@ for (ndays_s in c(10,15,20,25))
                             adjust_overlap_prob = adjust_overlap_prob
   )
   
-  #debug(f_angler_survey_bs_simu)
-  #write.table(counts, "simu_counts_progressive.txt", col.names = NA, sep ="\t")
-  #write.table(interviews, "simu_interviews_incomp.txt", col.names = NA, sep ="\t")
-  #debug(f_psu_interview_stat)
-  # debug(f_bus_route_total_boat_hours)
-  # debug(f_bus_route_creel_estimation)
-  # f_angler_survey_bs_simu
   assign(FN, f_angler_survey_bs_simu(n_simu, Species, est_by_daytype, True_Pop_Values, 
                                      DailyBHTrue, NumDays, total_route_time, route_proto, 
                                      strat_sampling_by_wkday, ndays_s, is_simu_pop, 
@@ -208,7 +201,7 @@ for (ndays_s in c(10,15,20,25))
                                      expansion_method, OptIntSampling, max_nints, fpc))
   
   
-  #debug(f_summaries)
+
   simu_res <- get(FN)
   summ <- round(f_summaries(simu_res$Estimates, True_Pop_Values), 2)
   FN
