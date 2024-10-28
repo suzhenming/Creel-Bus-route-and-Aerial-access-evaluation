@@ -6,11 +6,12 @@ The code files include bus-route (marked as _BUS_ROUTE) and aerial creel simulat
 This software is built for the manuscript "the Evaluation of Bus-route and Aerial-access Methods for Great Lakes Recreational Fisheries Surveys"
 by:
 
- Dr. Zhenming Su
- Institute for Fisheries Research 
+ Dr. Zhenming Su, 
+ Institute for Fisheries Research,
  Michigan Department of Natural Resources 
-      and University of Michigan  
+      and University of Michigan, 
  ANN ARBOR, MI 48100
+ 
  Email: suz@michigan.gov
 
  Early versions of this software was built for the research paper:
