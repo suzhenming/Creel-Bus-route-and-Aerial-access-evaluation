@@ -1,18 +1,15 @@
 ####################################################
 # Simulation evaluation of bus-route creel method
-#
-# Worked on Sept 5, 2021
-# No bias in all three estimators 
+#  by Dr. Zhenming Su
+#  Started Sept 5, 2021
 #
 ####################################################
 
-setwd("C:/Users/suz/OneDrive - State of Michigan DTMB/Documents/MiCreel/ResearchStudy/BusRouteStudy/Simulations/Simu_bus_route")
+setwd("../Simu_bus_route")
 
 library(lubridate)
 
-# True simulated population: Simu_BusRoute_2021_Pop.csv for Fish Res
-#    Get true angling trip population data
-#TP_NM = "True_Pop/Simu_BusRoute_2021_Pop.csv"
+# True simulated population:
 TP_NM = "../True_Pop/Simu_2021_LK_ERIE_bus_route_Pop_7.csv"
 
 True_Pop <- read.csv(TP_NM, header =TRUE, fill = TRUE, stringsAsFactors = FALSE)
