@@ -1,8 +1,12 @@
 #  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #  Sampling design: scheduling
 #  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Zhenming Su, IFR, ANN ARBOR
-
+# Dr. Zhenming Su
+# Institute for Fisheries Research 
+# Michigan Department of Natural Resources 
+#      and University of Michigan  
+# ANN ARBOR, MI 48100
+#
 # Created: March 15, 2010
 # Revised: Aug 1, 2021 for inland creel evaluation
 # Revised: Aug 7, 2021
