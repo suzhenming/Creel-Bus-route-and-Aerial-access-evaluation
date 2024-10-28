@@ -1,7 +1,15 @@
 #  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #  Sampling design: scheduling
 #  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Zhenming Su, IFR, ANN ARBOR
+# Dr. Zhenming Su
+# Institute for Fisheries Research 
+# Michigan Department of Natural Resources 
+#      and University of Michigan  
+# ANN ARBOR, MI 48100
+
+# Contact Zhenming Su (suz@michigan.gov) for any questions
+# Revised for "the Evaluation of Bus-route and Aerial-access Methods for Great Lakes Recreational Fisheries Surveys"
+#  by Zhenming Su, 2/9/2024 
 
 # Created: March 15, 2010
 # Revised: Aug 1, 2021 for inland creel evaluation
