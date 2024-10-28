@@ -4,6 +4,7 @@ Management agencies in the Great Lakes areas invest heavily in creel surveys for
 The code files include bus-route (marked as _BUS_ROUTE) and aerial creel simulations and true angler population trip data for several months.
 
 This software is built for the manuscript "the Evaluation of Bus-route and Aerial-access Methods for Great Lakes Recreational Fisheries Surveys"
+by:
 
  Dr. Zhenming Su
  Institute for Fisheries Research 
