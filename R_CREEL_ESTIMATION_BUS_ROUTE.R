@@ -1,8 +1,12 @@
 #  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #  Bus-route creel survey estimation
 #  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Dr. Zhenming Su
+# Institute for Fisheries Research 
+# Michigan Department of Natural Resources 
+#      and University of Michigan  
+# ANN ARBOR, MI 48100
 
-# Zhenming Su, IFR, DNR, ANN ARBOR, MI
 # Contact Zhenming Su (suz@michigan.gov) for any questions
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -80,69 +84,6 @@ bus_route_site_estimation <-  function(BoatCounts_sites, total_route_time, wait_
   route_daily_est$daily_site_Q <- total_route_time * route_daily_est$site_Q_per_wait_time
   route_daily_est
 }
-
-# f_psu_bus_route <- function(est_by_daytype, interviews, BoatCounts, month)
-# {
-# 	# ----------------------------------------------
-# 	# psu catch and effort estimation  
-# 	#   psu level summary information
-# 	# only for one month 
-# 	# ----------------------------------------------
-# 	# ---------------------------------------------------
-# 	# A psu is a day in the bus-route estimation
-# 	# ---------------------------------------------------
-# 	ints$psu <- as.factor(ints$DAY)
-# 	psu_f <-ints$psu
-# 	ints$DAYTYPE <- ifelse(ints$DOW < 6, 1, 2)
-# 
-#  	# psu summaries 
-# 	psu_summ = aggregate(list(NINTS=ints$DAY), list(MONTH = factor(ints$MONTH), DAYTYPE = factor(ints$DAYTYPE), DAY = psu_f, psu = psu_f), length)
-# 
-# 	n_psu <- nrow(psu_summ)
-# 
-#   # TripHours
-# 	ints$st <- as.POSIXct(paste(ints$SDAY, " ", ints$STIME, sep=""), format = "%m/%d/%Y %I:%M %p") 
-# 	ints$et <- as.POSIXct(paste(ints$EDAY, " ", ints$ETIME, sep=""), format = "%m/%d/%Y %I:%M %p") 
-# 
-# 	ints$trip_length <- as.numeric(difftime(ints$et, ints$st, units = "hours"))
-# 	
-#   ints$party_ang_hours <- ints$ANGCNT * ints$trip_length 
-# 
-# 	psu_summ$TripHours  <- tapply(ints$trip_length, list(psu_f), mean)
-# 	psu_summ$V_TripHours   <- tapply(ints$trip_length, list(psu_f), var)/psu_summ$NINT
-# 	
-#   # mean anglers/party
-#   psu_summ$PARTY_SIZE <- tapply(ints$ANGCNT, list(psu_f), mean, na.rm = TRUE)
-#   psu_summ$V_PARTY_SIZE    <- tapply(ints$ANGCNT, list(psu_f), var, na.rm = TRUE)/psu_summ$NINT
-# 
-# 	# mean party AngHours
-#   psu_summ$PartyAngHours <- tapply(ints$party_ang_hours, list(psu_f), mean)
-# 	psu_summ$V_PartyAngHours <- tapply(ints$party_ang_hours, list(psu_f), var)/psu_summ$NINT
-# 
-#   wait_time<- data.frame(AccessSite = c("Bolles", "Sterling"), wait_time = c( 2.666666667, 3.833333333))
-# 
-#   # boat hours
-# 	Bd_df <- data.frame(Q = ints$TripLenW, AccessSite = ints$AccessSite, psu = psu_f)
-#   route_daily_est <- bus_route_site_estimation(boat_counts, total_route_time, wait_time, Bd_df)
-# 	daily_est <- aggregate(list(BH_day = route_daily_est$daily_site_Q),  list(Day = as.factor(route_daily_est$Day)), sum)	
-#   psu_summ$BH <- daily_est$BH_day
-# 
-# 	mean_monthly_boat_hours <- mean(daily_est$BH_day)
-# 	monthly_boat_hours <- mean_monthly_boat_hours * 31
-# 	
-#   ints$WAE[is.na(ints$WAE)] <- 0
-# 	weighted_catch <- ints$WAE/ints$weight_sampling
-# 	Cd_df <- data.frame(Q = weighted_catch, AccessSite = ints$AccessSite, psu = psu_f)
-#   route_daily_est <- bus_route_site_estimation(boat_counts, total_route_time, wait_time, Cd_df)
-# 
-# 	daily_est <- aggregate(list(C_day = route_daily_est$daily_site_Q),  list(Day = as.factor(route_daily_est$Day)), sum)	
-#   psu_summ$WAE <- daily_est$C_day
-# 
-# 	mean_monthly_C <- mean(daily_est$C_day)
-# 	monthly_C <- mean_monthly_C * 31
-# 
-# 	psu_summ <- na.omit(psu_summ)
-# }
 
 week_days <- function(date_str) {
     # use strftime function with "%u" format parameter to return the weekday
