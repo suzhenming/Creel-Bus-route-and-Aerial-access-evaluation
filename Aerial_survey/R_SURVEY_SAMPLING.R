@@ -8,7 +8,7 @@
 # ANN ARBOR, MI 48100
 
 # Contact Zhenming Su (suz@michigan.gov) for any questions
-# Revised for "the Evaluation of Bus-route and Aerial-access Methods for Great Lakes Recreational Fisheries Surveys"
+# Revised for "Evaluation of Bus-route and Aerial-access Methods for Great Lakes Recreational Fisheries Surveys"
 #  by Zhenming Su, 2/9/2024 
 
 # Created: March 15, 2010
