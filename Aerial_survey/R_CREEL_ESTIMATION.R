@@ -3,9 +3,15 @@
 #    for Michigan Great Lakes
 #    creel surveys
 #  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Dr. Zhenming Su
+# Institute for Fisheries Research 
+# Michigan Department of Natural Resources 
+#      and University of Michigan  
+# ANN ARBOR, MI 48100
 
-# Zhenming Su, IFR, DNR, ANN ARBOR, MI
 # Contact Zhenming Su (suz@michigan.gov) for any questions
+# Revised for "the Evaluation of Bus-route and Aerial-access Methods for Great Lakes Recreational Fisheries Surveys"
+#  by Zhenming Su, 2/9/2024 
 
 # Software built for the research paper:
 # Zhenming Su & David Clapp (2013): Evaluation of Sample Design and Estimation Methods for Great Lakes
@@ -22,7 +28,6 @@
 # Aug 25: fixed problems with numang 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# Revised: 2/9/2024
 
 f_approximateBayesianBootstrap <- function(nc, yobs, v_yobs)
 {
