@@ -1,18 +1,15 @@
 ####################################################
 # Simulation evaluation of bus-route creel method
-#
-# Worked on Sept 5, 2021
-# No bias in all three estimators 
+#  by Dr. Zhenming Su
+#  Started Sept 5, 2021
 #
 ####################################################
 
-setwd("C:/Users/suz/OneDrive - State of Michigan DTMB/Documents/MiCreel/ResearchStudy/BusRouteStudy/Simulations/Simu_bus_route")
+setwd("../Simu_bus_route")
 
 library(lubridate)
 
-# True simulated population: Simu_BusRoute_2021_Pop.csv for Fish Res
-#    Get true angling trip population data
-#TP_NM = "True_Pop/Simu_BusRoute_2021_Pop.csv"
+# True simulated population: for September
 TP_NM = "../True_Pop/Simu_2021_LK_ERIE_bus_route_Pop_9.csv"
 
 True_Pop <- read.csv(TP_NM, header =TRUE, fill = TRUE, stringsAsFactors = FALSE)
@@ -196,20 +193,13 @@ for (ndays_s in c(10,15,20,25))
                             adjust_overlap_prob = adjust_overlap_prob
   )
   
-  #debug(f_angler_survey_bs_simu)
-  #write.table(counts, "simu_counts_progressive.txt", col.names = NA, sep ="\t")
-  #write.table(interviews, "simu_interviews_incomp.txt", col.names = NA, sep ="\t")
-  #debug(f_psu_interview_stat)
-  # debug(f_bus_route_total_boat_hours)
-  # debug(f_bus_route_creel_estimation)
-  # f_angler_survey_bs_simu
   assign(FN, f_angler_survey_bs_simu(n_simu, Species, est_by_daytype, True_Pop_Values, DailyBHTrue, NumDays, 
                                      total_route_time, route_proto, 
                                      strat_sampling_by_wkday, ndays_s, is_simu_pop, True_Pop, 
                                      n_shifts, shift_times, !shifts_overlapping, adjust_overlap_prob, expansion_method,
                                      OptIntSampling, max_nints, fpc))
   
-  #debug(f_summaries)
+  
   simu_res <- get(FN)
   summ <- round(f_summaries(simu_res$Estimates, True_Pop_Values), 2)
   FN
