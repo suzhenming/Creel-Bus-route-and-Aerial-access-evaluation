@@ -1,3 +1,14 @@
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  Bus-route creel survey simulation summary stat
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Dr. Zhenming Su
+# Institute for Fisheries Research 
+# Michigan Department of Natural Resources 
+#      and University of Michigan  
+# ANN ARBOR, MI 48100
+
+# Contact Zhenming Su (suz@michigan.gov) for any questions
+
 # Revised: Aug 8, 2021
 
 f_sum_stat <- function(est, v_est, true_value)
