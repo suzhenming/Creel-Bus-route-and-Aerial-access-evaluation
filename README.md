@@ -19,6 +19,6 @@ by:
  Zhenming Su and David Clapp (2013), Evaluation of Sample Design and Estimation Methods for Great Lakes
    Angler Surveys, Transactions of the American Fisheries Society, 142:1, 234-246
    
- To link to this article: http://dx.doi.org/10.1080/00028487.2012.728167
+ The link to this article is: http://dx.doi.org/10.1080/00028487.2012.728167
  
  A reprint for this paper can be obtained from https://www.researchgate.net/profile/Zhenming-Su/research
